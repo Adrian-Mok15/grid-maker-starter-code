@@ -67,7 +67,7 @@ function removeC() {
     }
 
     //remove extraneous rows if empty
-    if(numCols == 1){
+    if(numCols <= 1){
         let grid = document.getElementById("grid");
         for(let i = 0; i < numRows; i++){
             grid.lastElementChild.remove();
